@@ -1,0 +1,51 @@
+body,html{
+    height: 100%;
+    background-color: rgba(122, 163, 240, 0.568);   
+}
+
+img{
+    width: 70px;
+    height: 80px;
+}
+
+.teste{
+    font-size: 16pt;
+    border-block: 12px;
+}
+
+.div1{
+    background-color: rgba(238, 238, 238, 0.637);
+    padding: 10px;
+}
+
+.div_dadosParceiro{
+    background-color: white;
+    text-align: center;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 250px;
+}
+
+.div_sucesso{
+    background-color: white;
+    text-align: center;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 250px;
+}
+
+.div_falhas{
+    background-color: white;
+    text-align: center;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 250px;
+}
+
+.div_fraudes{
+    background-color: white;
+    text-align: center;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 250px;
+}

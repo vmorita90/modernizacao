@@ -1,0 +1,22 @@
+body {
+    background-color: whitesmoke;
+    }
+
+
+img {
+        border: 1px solid #555;
+    }
+
+navbar {
+
+    background-color: #FF7200;
+    color: #140083;
+    text-shadow: 1px 1 px;
+}
+
+.align-left { float: left }
+.align-right {float : right }
+
+.dropdown-menu-right {
+    padding-left: 10px;
+}

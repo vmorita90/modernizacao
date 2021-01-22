@@ -71,6 +71,16 @@ public class ModernizacaoController {
 		}
 	}
 	
+	//aqui faremos a rotina que busca tudo da comunidade
+	@GetMapping("/modernizacao/comunidade/{id}")
+	public ArrayList<Modernizacao> buscarExtrato(@PathVariable int id){
+		
+		
+	}
+	
+	
+	
+	
 	@GetMapping("/modernizacao")
 	public ArrayList<Modernizacao> recuperarTodos(){
 		ArrayList<Modernizacao> lista;

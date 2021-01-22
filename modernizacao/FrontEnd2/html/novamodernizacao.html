@@ -9,7 +9,9 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" />
    
  
-    <script type="text/javascript" src="../js/novamodernizacao.js"></script>
+    <script type="text/javascript" src="../js/novamodernizacao.js">
+
+    </script>
     <title>.: Cadastro de Modernizacao :.</title>
     <link rel="stylesheet" href="../css/estilos.css">
     
@@ -78,8 +80,9 @@
     <div id="formulario">
         <div class="mb-3">
             <label for="txtData" class="form-label"> Data da Modernização </label>
-            <input type="date" class="form-control" id="txtData"><br>
-            <button type="button" class="btn btn-primary" onclick="pesquisar()">Pesquisar</button>
+            <input type="date" class="form-control" id="txtData">
+            <!--<button type="button" class="btn btn-primary" onclick="pesquisar()">Pesquisar</button> !>
+            -->
         </div>
 
         <div class="row">
@@ -92,7 +95,7 @@
 
         <div class="mb-3">
             <label for="txtDescricao" class="form-label"> Descrição </label>
-            <input type="text" class="form-control" id="txtDescricao">
+            <input type="text" class="form-control" id="txtDescricao" onfocus="pesquisar()">
             
         </div>
 
@@ -102,6 +105,10 @@
             
         </div>
 
+<div class="row">
+    <div class="col-12"><p id="msgStatus" style="color: red;"> </p>
+    </div>
+</div>
         <button type="button" class="btn btn-primary" onclick="cadastrar()">Cadastrar</button>
 
     </div>

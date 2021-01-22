@@ -21,6 +21,10 @@ function carregaInfo(){
 
     IDCom = parseInt(idComunidade); // já atribuí e converti para inteiro
 
+    fetch("http://localhost:8088/novamodernizacao/"+IDCom)
+    .then(res => res.json())
+    .then(comunidade => document.getElementById("nomeComunidade").innerHTML = comunidade.nome);
+
 
     fetch("http://localhost:8088/comunidades/"+IDCom)
         .then(res => res.json())

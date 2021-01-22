@@ -1,4 +1,6 @@
 function carregaInfo() { //verifica se usuário está conectado;
+    var total=0;
+    
     var userSTR = localStorage.getItem("userMod");
     if (!userSTR) {
         window.location = "index.html"

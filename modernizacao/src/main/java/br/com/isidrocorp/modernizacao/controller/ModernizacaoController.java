@@ -16,6 +16,7 @@ import br.com.isidrocorp.modernizacao.dao.ModernizacaoDAO;
 import br.com.isidrocorp.modernizacao.dto.Percentual;
 import br.com.isidrocorp.modernizacao.dto.PercentualQuantidade;
 import br.com.isidrocorp.modernizacao.dto.QuantidadeOcorrencias;
+import br.com.isidrocorp.modernizacao.model.Comunidade;
 import br.com.isidrocorp.modernizacao.model.Modernizacao;
 
 @RestController
@@ -74,7 +75,9 @@ public class ModernizacaoController {
 	//aqui faremos a rotina que busca tudo da comunidade
 	@GetMapping("/modernizacao/comunidade/{id}")
 	public ArrayList<Modernizacao> buscarExtrato(@PathVariable int id){
-		
+		Comunidade c = new Comunidade();
+		c.setId(id);
+		return dao.findAllByComunidade(c);
 		
 	}
 	
